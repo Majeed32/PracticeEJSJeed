@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+    <div class="form-container">
+        <form action="<%= post.id ? '/updatePost/' + post.id : '/addPost' %> " method="post">
+            <textarea required name="title" placeholder="Title of blog"
+                class="titleArea"><%= post.title || '' %></textarea>
+            <textarea required name="content" placeholder="Content of blog"
+                class="contentArea"><%= post.content || ''%></textarea>
+            <input type="submit" class="submit" value="UPDATE">
+        </form>
+    </div>
+    <%- include('partials/footer.ejs') %>

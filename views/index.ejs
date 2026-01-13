@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs") %>
+    <div class="posts">
+        <% for (let post of array){ %>
+            <div class="individual-blogs">
+                <a href="/posts/<%= post.id %>">
+                    <%= post.title %>
+                </a>
+            </div>
+            <% } %>
+    </div>
+
+    <%- include('partials/footer.ejs') %>

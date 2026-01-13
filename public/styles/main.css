@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+body {
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+hr {
+  margin: 20px 0;
+}
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+.blog-header-links a {
+  color: black;
+  padding: 0 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.blog-header-links a:hover {
+  color: darkgray;
+}
+
+.posts {
+  display: flex;
+  justify-content: center;
+  align-items: flex start;
+  align-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex: 1;
+  min-height: calc(100vh - 70px);
+}
+.individual-blogs a {
+  font-size: 1.5rem;
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.individual-blogs {
+  width: 400px;
+  height: 200px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  border: 2px dashed black;
+}
+
+.individual-blogs:hover {
+  background-color: rgb(246, 255, 205);
+}
+
+.social-media-icons {
+  text-align: center;
+  font-size: 2rem;
+  background-color: rgb(255, 243, 205);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 2px solid gray;
+}
+
+.lower-footer {
+  background-color: rgb(255, 254, 205);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80px;
+}
+
+.post-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex: 1;
+}
+
+.post-box {
+  background-color: rgb(246, 255, 205);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  padding: 40px;
+  border: 2px dashed black;
+}
+.post-box p {
+  font-size: 1.25rem;
+}
+
+.post-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgb(216, 255, 205);
+    border: none;
+    a {
+      color: black;
+    }
+  }
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  padding: 30px;
+  gap: 10px;
+}
+.form-container textarea {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: rgb(246, 255, 205);
+  border: 2px dashed black;
+}
+
+.titleArea {
+  height: 80px;
+  padding: 12px;
+}
+
+.contentArea {
+  height: 300px;
+  padding: 12px;
+}
+
+.submit {
+  width: 80px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: rgb(216, 255, 205);
+  border: none;
+}
